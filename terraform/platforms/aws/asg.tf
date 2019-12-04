@@ -89,7 +89,7 @@ resource "aws_launch_configuration" "main" {
 
   lifecycle {
     create_before_destroy = true
-    ignore_changes        = ["image_id"]
+    ignore_changes        = [image_id]
   }
 }
 
